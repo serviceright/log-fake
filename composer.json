@@ -1,5 +1,5 @@
 {
-    "name": "timacdonald/log-fake",
+    "name": "serviceright/log-fake",
     "description": "A drop in fake logger for testing with the Laravel framework.",
     "keywords": [
         "fake",
@@ -18,10 +18,10 @@
     ],
     "require": {
         "php": "^7.1 || ^8.0",
-        "illuminate/config": "~5.6.0 || ~5.7.0 || ~5.8.0 || ^6.0 || ^7.0 || ^8.0",
-        "illuminate/container": "~5.6.0 || ~5.7.0 || ~5.8.0 || ^6.0 || ^7.0 || ^8.0",
-        "illuminate/support": "~5.6.0 || ~5.7.0 || ~5.8.0 || ^6.0 || ^7.0 || ^8.0",
-        "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+        "illuminate/config": "^9.0",
+        "illuminate/container": "^9.0",
+        "illuminate/support": "^9.0",
+        "phpunit/phpunit": "^9.0",
         "psr/log": "^1.0 || ^2.0"
     },
     "require-dev": {
@@ -33,7 +33,11 @@
     },
     "config": {
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "infection/extension-installer": true,
+            "ergebnis/composer-normalize": true
+        }
     },
     "autoload": {
         "psr-4": {
